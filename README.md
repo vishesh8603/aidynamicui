@@ -80,7 +80,7 @@ Users start by selecting their preferred professional persona from an elegant gr
 ## Customization
 
 ### Adding New Personas
-1. **Define persona configuration**:
+1. Define persona configuration**:
 @@ -177,15 +177,15 @@ const portfolioData = {
 };
 ```
@@ -103,18 +103,18 @@ Users start by selecting their preferred professional persona from an elegant gr
 
 ##  Contributing
 
-1. **Fork the repository**
-2. **Create feature branch**: `git checkout -b feature/amazing-feature`
+1. Fork the repository**
+2. Create feature branch**: `git checkout -b feature/amazing-feature`
 @@ -216,14 +216,14 @@ analytics.track('persona_selected', {
 - Document all functions and components
 - Test across multiple browsers
 
 ## Performance Metrics
 
-- First Contentful Paint**: < 1.5s
-- Time to Interactive**: < 3.0s
-- CSS Generation Time**: < 2.0s
-- Style Application**: < 0.5s
+- First Contentful Paint: < 1.5s
+- Time to Interactive: < 3.0s
+- CSS Generation Time: < 2.0s
+- Style Application: < 0.5s
 
 ## › Troubleshooting
 
