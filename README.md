@@ -111,10 +111,10 @@ Users start by selecting their preferred professional persona from an elegant gr
 
 ## Performance Metrics
 
-- **First Contentful Paint**: < 1.5s
-- **Time to Interactive**: < 3.0s
-- **CSS Generation Time**: < 2.0s
-- **Style Application**: < 0.5s
+- First Contentful Paint**: < 1.5s
+- Time to Interactive**: < 3.0s
+- CSS Generation Time**: < 2.0s
+- Style Application**: < 0.5s
 
 ## › Troubleshooting
 
@@ -127,15 +127,15 @@ Solution: Check JavaScript event listeners and CSS variable definitions
 
 ## Acknowledgments
 
-- **Google Gemini API** for AI-powered CSS generation
-- **Modern CSS Features** for responsive design capabilities
-- **Web Standards** for semantic HTML structure
-- **Open Source Community** for inspiration and best practices
+- Google Gemini API** for AI-powered CSS generation
+- Modern CSS Features** for responsive design capabilities
+- Web Standards** for semantic HTML structure
+- Open Source Community** for inspiration and best practices
 
 
 ## Contact
 
-**Vishesh** - Computer Science Engineering Student
+- Vishesh Computer Science Engineering Student
 - Email: visheshyadav_co22a8_19@dtu.ac.in
 
 ---
