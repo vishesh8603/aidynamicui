@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio Generator - Yanshu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Persona Selection Landing -->
+    <section id="persona-selection" class="persona-landing">
+        <div class="container">
+            <div class="landing-header">
+                <h1 class="landing-title">
+                    <span class="ai-gradient">AI Portfolio</span> Generator
+                </h1>
+                <p class="landing-subtitle">Choose your persona to generate a personalized portfolio experience</p>
+            </div>
+            
+            <div class="personas-grid" id="personas-grid">
+                <div class="persona-card" data-persona="developer">
+                    <div class="persona-icon">💻</div>
+                    <h3 class="persona-title">Developer</h3>
+                    <p class="persona-description">Technical focus with clean, minimal design</p>
+                    <button class="btn btn--primary generate-portfolio-btn">Generate Portfolio</button>
+                </div>
+                
+                <div class="persona-card" data-persona="designer">
+                    <div class="persona-icon">🎨</div>
+                    <h3 class="persona-title">Designer</h3>
+                    <p class="persona-description">Creative and visually appealing layouts</p>
+                    <button class="btn btn--primary generate-portfolio-btn">Generate Portfolio</button>
+                </div>
+                
+                <div class="persona-card" data-persona="manager">
+                    <div class="persona-icon">💼</div>
+                    <h3 class="persona-title">Manager</h3>
+                    <p class="persona-description">Professional and business-oriented presentation</p>
+                    <button class="btn btn--primary generate-portfolio-btn">Generate Portfolio</button>
+                </div>
+                
+                <div class="persona-card" data-persona="entrepreneur">
+                    <div class="persona-icon">🚀</div>
+                    <h3 class="persona-title">Entrepreneur</h3>
+                    <p class="persona-description">Bold and innovative startup aesthetic</p>
+                    <button class="btn btn--primary generate-portfolio-btn">Generate Portfolio</button>
+                </div>
+                
+                <div class="persona-card" data-persona="creative">
+                    <div class="persona-icon">✨</div>
+                    <h3 class="persona-title">Creative</h3>
+                    <p class="persona-description">Artistic and expressive design approach</p>
+                    <button class="btn btn--primary generate-portfolio-btn">Generate Portfolio</button>
+                </div>
+                
+                <div class="persona-card" data-persona="student">
+                    <div class="persona-icon">🎓</div>
+                    <h3 class="persona-title">Student</h3>
+                    <p class="persona-description">Fresh and academic-friendly appearance</p>
+                    <button class="btn btn--primary generate-portfolio-btn">Generate Portfolio</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Generation Section -->
+    <section id="portfolio-section" class="portfolio-section hidden">
+        <!-- Loading State -->
+        <div id="portfolio-loading" class="portfolio-loading">
+            <div class="loading-content">
+                <div class="loading-icon">🤖</div>
+                <h2 class="loading-title">Generating Your Portfolio</h2>
+                <p class="loading-message">Applying AI-powered styles for <span id="selected-persona-name">your persona</span>...</p>
+                <div class="loading-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Content -->
+        <div id="portfolio-content" class="portfolio-content hidden">
+            <!-- Portfolio Header -->
+            <header class="portfolio-header">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="profile-section">
+                            <div class="profile-info">
+                                <h1 class="name">YANSHU</h1>
+                                <h2 class="title">Full Stack Developer & AI Enthusiast</h2>
+                                <div class="contact-links">
+                                    <a href="mailto:yanshu_co22a8_22@dtu.ac.in" class="contact-link">
+                                        <span>📧</span> yanshu_co22a8_22@dtu.ac.in
+                                    </a>
+                                    <a href="tel:+91-9540789883" class="contact-link">
+                                        <span>📱</span> +91-9540789883
+                                    </a>
+                                    <a href="#" class="contact-link" target="_blank">
+                                        <span>💼</span> LinkedIn
+                                    </a>
+                                    <a href="#" class="contact-link" target="_blank">
+                                        <span>💻</span> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- About Section -->
+            <section class="portfolio-about">
+                <div class="container">
+                    <h2 class="section-title">About</h2>
+                    <p class="about-text">
+                        Passionate Full Stack Developer and AI Enthusiast with expertise in building scalable web applications 
+                        and implementing cutting-edge AI solutions. Currently pursuing B.Tech in Computer Science Engineering 
+                        at Delhi Technological University with hands-on experience in backend development, UI/UX design, and 
+                        research work in propellant optimization.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="portfolio-experience">
+                <div class="container">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="experience-timeline">
+                        <div class="experience-item">
+                            <div class="experience-date">June 2025 – July 2025</div>
+                            <div class="experience-content">
+                                <h3 class="experience-title">Backend Intern</h3>
+                                <h4 class="experience-company">RADVIK TECHNOLOGIES</h4>
+                                <ul class="experience-responsibilities">
+                                    <li>Contributed to the backend development of a platform that integrates open-source security tools to find codebase issues like SAST vulnerabilities, image flaws, and SQL injection risks.</li>
+                                    <li>Designed and tested backend modules using Spring Boot, handling user status updates, widget data processing, and robust data fetching/parsing.</li>
+                                    <li>Enabled the platform to track and represent issues from different git branches, significantly improving efficiency and usability for security analysis.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="experience-date">July 2023 – Present</div>
+                            <div class="experience-content">
+                                <h3 class="experience-title">Research Work</h3>
+                                <h4 class="experience-company">Rocketry Tech Team, DTU, Delhi, India</h4>
+                                <ul class="experience-responsibilities">
+                                    <li>Led propellant optimization by creating SOPs and building a testing stand, achieving a 2.5x increase in burn rate while keeping dimensions the same.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="portfolio-projects">
+                <div class="container">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3 class="project-title">AI-Powered Dynamic UI Engine</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Gemini API</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <p class="project-description">
+                                Engineered an AI-powered UI engine to create hyper-personalized frontend experiences in real-time. 
+                                Leveraged the Gemini API to process user data and generate custom CSS stylesheets on the fly. 
+                                Implemented dynamic DOM patching to apply AI-generated styles, delivering a unique and tailored user experience.
+                            </p>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3 class="project-title">Chrome Extension (OCR & Autofill)</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">OCR (Tesseract.js)</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Spring Boot (JWT)</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <p class="project-description">
+                                Built a Chrome extension that scans forms and autofills fields using OCR-extracted data from uploaded documents. 
+                                Secured document handling with Spring Boot (JWT) and improved OCR accuracy via Python preprocessing. 
+                                Implemented DOM scanning, field mapping, and ML-based heuristics for efficient autofill.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="portfolio-skills">
+                <div class="container">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Languages</h3>
+                            <div class="skills-list">
+                                <span class="skill-item">C</span>
+                                <span class="skill-item">C++</span>
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">JavaScript</span>
+                                <span class="skill-item">SQL</span>
+                                <span class="skill-item">TypeScript</span>
+                                <span class="skill-item">HTML</span>
+                                <span class="skill-item">CSS</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Frameworks & Tools</h3>
+                            <div class="skills-list">
+                                <span class="skill-item">Spring Boot</span>
+                                <span class="skill-item">React.js</span>
+                                <span class="skill-item">Node.js</span>
+                                <span class="skill-item">Express</span>
+                                <span class="skill-item">NEXT.js</span>
+                                <span class="skill-item">MongoDB</span>
+                                <span class="skill-item">Prisma</span>
+                                <span class="skill-item">Zod</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Development Tools</h3>
+                            <div class="skills-list">
+                                <span class="skill-item">Git</span>
+                                <span class="skill-item">GitHub</span>
+                                <span class="skill-item">Docker</span>
+                                <span class="skill-item">Postgres</span>
+                                <span class="skill-item">Chrome DevTools</span>
+                                <span class="skill-item">Unix</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Concepts & Specializations</h3>
+                            <div class="skills-list">
+                                <span class="skill-item">Data Structures & Algorithms</span>
+                                <span class="skill-item">Operating Systems</span>
+                                <span class="skill-item">DBMS</span>
+                                <span class="skill-item">OOP</span>
+                                <span class="skill-item">Networking (TCP/IP)</span>
+                                <span class="skill-item">API Development</span>
+                                <span class="skill-item">Security Vulnerability Analysis (SAST)</span>
+                                <span class="skill-item">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="portfolio-education">
+                <div class="container">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="education-date">2022 – 2026</div>
+                            <div class="education-content">
+                                <h3 class="education-degree">B.Tech in Computer Science Engineering</h3>
+                                <h4 class="education-institution">Delhi Technological University (DTU)</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-date">2020 – 2021</div>
+                            <div class="education-content">
+                                <h3 class="education-degree">Class XII (CBSE) - 84.4%</h3>
+                                <h4 class="education-institution">Ganga International School</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leadership & Community Section -->
+            <section class="portfolio-leadership">
+                <div class="container">
+                    <h2 class="section-title">Leadership & Community</h2>
+                    <div class="leadership-grid">
+                        <div class="leadership-card">
+                            <h3 class="leadership-title">Head of Safety and Testing, DTU Rocketry Team</h3>
+                            <p class="leadership-description">
+                                Co-founded DTU's first rocketry team and secured 2.5 lakh in initial funding through a joint proposal. 
+                                Oversee all safety protocols and testing operations to ensure secure and successful project execution.
+                            </p>
+                        </div>
+                        
+                        <div class="leadership-card">
+                            <h3 class="leadership-title">Desh Ke Mentor Program</h3>
+                            <p class="leadership-description">
+                                Given the opportunity through my college to mentor underprivileged school students as part of the 
+                                Desh Ke Mentor program, providing academic and career guidance under the Delhi Government's initiative.
+                            </p>
+                        </div>
+                        
+                        <div class="leadership-card">
+                            <h3 class="leadership-title">NSS Foundation Drive</h3>
+                            <p class="leadership-description">
+                                Volunteered in the NSS Foundation Drive, teaching and interacting with children from disadvantaged 
+                                backgrounds to help them build confidence and foundational skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Footer -->
+            <footer class="portfolio-footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-info">
+                            <p class="footer-text">Generated with AI Portfolio Generator</p>
+                            <p class="footer-subtext">Persona-driven CSS styling via prompt injection</p>
+                        </div>
+                        <div class="footer-actions">
+                            <button class="btn btn--secondary" id="try-another-persona">
+                                <span>🔄</span> Try Another Persona
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
