@@ -22,7 +22,7 @@ Choose from 6 distinct professional personas, each generating unique visual expe
 - Student: Fresh academic styling, clean and approachable design
 
 ### AI-Powered Styling
-- Prompt Injection**: Constructs persona-specific prompts for Gemini API
+- Prompt Injection: Constructs persona-specific prompts for Gemini API
  Professional portfolio sections populated with real resume data:
 - Leadership positions and community involvement
 - Contact information and social links
@@ -127,10 +127,10 @@ Solution: Check JavaScript event listeners and CSS variable definitions
 
 ## Acknowledgments
 
-- Google Gemini API** for AI-powered CSS generation
-- Modern CSS Features** for responsive design capabilities
-- Web Standards** for semantic HTML structure
-- Open Source Community** for inspiration and best practices
+- Google Gemini API for AI-powered CSS generation
+- Modern CSS Features for responsive design capabilities
+- Web Standards for semantic HTML structure
+- Open Source Community for inspiration and best practices
 
 
 ## Contact
